@@ -1,0 +1,52 @@
+:root {
+--text: #050505;
+ --mainFont: helvetica, sans-serif;
+}
+*,*::before,*::after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    color: var(--text);
+    font-family: var(--mainFont);
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 2rem;
+}
+a {
+text-decoration: none;
+cursor: pointer;
+color: var(--text)
+}
+
+.main{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.day{
+    width:250px;
+  
+   
+}
+.dayname, .class{
+    margin-bottom: 0.5rem;
+}
+
+.class{
+    padding:1rem;
+    border: 1px black solid;
+    border-radius: 0.2rem;
+}
