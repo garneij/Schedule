@@ -21,9 +21,9 @@ body {
     padding: 2rem;
 }
 a {
-text-decoration: none;
-cursor: pointer;
-color: var(--text)
+    /* text-decoration: none; */
+    cursor: pointer;
+    color: var(--text)
 }
 
 .main{
@@ -49,4 +49,23 @@ color: var(--text)
     padding:1rem;
     border: 1px black solid;
     border-radius: 0.2rem;
+}
+
+
+.digimark{
+    background-color: #a0adf4;
+}
+
+.environment{
+    background-color: #c3f4a0;
+}
+
+.sus{
+    background-color: #ffef78;
+}
+.skills{
+    background-color: #ffffff;
+}
+.approach{
+    background-color: #a0f4e3;
 }
