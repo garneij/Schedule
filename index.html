@@ -7,27 +7,28 @@
 <title>Schedule Deusto</title>
 </head>
 <body>
+    
     <main class="main">
         <h1 class="title">
             Schedule
         </h1>
         <article class="day">
-            <h3 class="dayname">Monday</h3>
+            <h3 class="dayname" id="Monday">Monday</h3>
             <div class="class sus">
                 <h4 class="classname">Business & Sustainability</h4>
                 <p class="time">12:00 – 14:00</p>
                 <p class="location">Arrupe 104</p>
             </div>
-           
-            <div class="class sus">
+            
+            <div class="class approach">
                 <h4 class="classname">Critical Approaches</h4>
                 <p class="time">17:30 – 18:30</p>
                 <p class="location"><a href="https://meet.google.com/vyd-whzn-zhg">Meet</a></p>
             </div>
         </article>
         <article class="day">
-            <h3 class="dayname">Tuesday</h3>
-            <div class="class digmark">
+            <h3 class="dayname" id="Tuesday">Tuesday</h3>
+            <div class="class digimark">
                 <h4 class="classname">Digital Marketing I</h4>
                 <p class="time">12:00 – 14:00</p>
                 <p class="location">Altuna 44 </p>
@@ -39,7 +40,7 @@
             </div>
         </article>
         <article class="day">
-            <h3 class="dayname">Wednesday</h3>
+            <h3 class="dayname" id="Wednesday">Wednesday</h3>
             <div class="class sus">
                 <h4 class="classname">Business & Sustainability</h4>
                 <p class="time">10:00 – 12:00</p>
@@ -51,21 +52,21 @@
                 <p class="location">Arrupe 104</p>
             </div>
            
-            <div class="class sus">
+            <div class="class approach">
                 <h4 class="classname">Critical Approaches</h4>
                 <p class="time">17:30 – 18:30</p>
                 <p class="location"><a href="https://meet.google.com/vyd-whzn-zhg">Meet</a></p>
             </div>
         </article>
         <article class="day">
-            <h3 class="dayname">Thursday</h3>
+            <h3 class="dayname" id="Thursday">Thursday</h3>
             <div class="class environment">
                 <h4 class="classname">Business Environment</h4>
                 <p class="time">08:00 – 10:00</p>
                 <p class="location">Arrupe 104</p>
             </div>
           
-            <div class="class digmark">
+            <div class="class digimark">
                 <h4 class="classname">Digital Marketing I</h4>
                 <p class="time">12:00 – 14:00</p>
                 <p class="location">Altuna 44 </p>
@@ -77,5 +78,22 @@
             </div>
         </article>
     </main>
+    <script>
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const today = days[new Date().getDay()];
+      
+    
+        // Only act if today is Mon–Thu
+        if (["Monday", "Tuesday", "Wednesday", "Thursday"].includes(today)) {
+          const heading = document.getElementById(today);
+          if (heading) {
+            // Scroll into view
+            heading.scrollIntoView({ behavior: "smooth", block:"start"});
+            
+          }
+        }
+        // Otherwise: do nothing (regular)
+      </script>
 </body>
+
 </html>
